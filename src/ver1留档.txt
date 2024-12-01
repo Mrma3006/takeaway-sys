@@ -1,0 +1,46 @@
+<template>
+  <el-container style="height: 100vh;">
+    <!-- 头部菜单栏 -->
+    <el-header height="60px">
+      <HeaderMenu />
+    </el-header>
+
+    <el-container>
+      <!-- 左侧菜单栏 -->
+      <el-aside width="200px">
+        <SidebarMenu />
+      </el-aside>
+
+      <!-- 内容页 -->
+      <el-main>
+        <ContentPage />
+      </el-main>
+    </el-container>
+
+    <!-- 底部链接区域 -->
+    <el-footer height="50px" class="footer">
+      <p>© 2024 Company TakeawaySys-Test | <a href="https://example.com" target="_blank">Privacy Policy</a></p>
+    </el-footer>
+  </el-container>
+</template>
+
+<script>
+import HeaderMenu from './components/HeaderMenu.vue';
+import SidebarMenu from './components/SidebarMenu.vue';
+import ContentPage from './components/ContentPage.vue';
+
+export default {
+  components: {
+    HeaderMenu,
+    SidebarMenu,
+    ContentPage,
+  },
+};
+</script>
+
+<style>
+.footer {
+  text-align: center;
+  line-height: 50px;
+}
+</style>
