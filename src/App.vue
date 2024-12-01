@@ -26,7 +26,7 @@
         </el-menu>
       </el-aside>
 
-      <!-- Content Area -->
+      <!-- 头部菜单选项 -->
       <el-main>
         <div v-if="currentPage === 'home'">
           <img src="https://via.placeholder.com/600x400" alt="主页图片" />
